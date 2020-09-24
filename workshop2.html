@@ -17,18 +17,21 @@
 	  document.write("<p>Tehtävä 3. selain() toimii</p>");
 	  document.write("<h3>Kuva</h3>");
 	  document.write('<img src="https://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg" id="Kuva" height="250" width="350">');
+     
       function repeatingText() {
         for (var i = 0; i <= 50; i++) {
           document.write("<p>Exercise 2 </p>" + i + " ");
         }
       }
-	  function selain() {
+	  
+    function selain() {
 	  if (navigator.appCodeName == "Mozilla") {
 		  window.location.href = "http://mozilla.org.";
 	  } else {
 		  window.location.href = "http://www.microsoft.com";
 	  }
 	  }
+
 		function kysymys() {
 	  var y = window.confirm("Student or not?");
 	  if (y == true) {
@@ -39,11 +42,13 @@
 		   return false;
 	  }
 		}
+
 		var images =[
 		"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg", 
 		"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg", 
 		"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
 		];
+    
 		function randomKuva() {
 			var num = Math.round ( Math.random() * 2);
 			document.getElementById("Kuva").src = images[num];		
